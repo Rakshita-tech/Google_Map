@@ -11,7 +11,7 @@
    });
 
    // Add zoom control
-   map.addControl(new mapboxgl.NavigationControl());
+   map.addControl(new mapboxgl.NavigationControl(), "bottom-right");
    map.scrollZoom.disable();
    map.on('style.load', () => {
        map.setFog({}); // Set the default atmosphere style
